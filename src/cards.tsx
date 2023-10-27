@@ -1,4 +1,3 @@
-import './cards.css'
 import { CSSProperties } from 'react'
 type Props = {
     data:{
@@ -27,7 +26,7 @@ const Card = ({data}:Props)=>{
     }
 
     return (
-        <div className='cardCss' style={cardStyle}>
+        <div style={cardStyle}>
             <img style={imgStyle} src={pictureURL} alt="an animal"/>
             <h3>{title}</h3>
             <p>{paragraph}</p>
