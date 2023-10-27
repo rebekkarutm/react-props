@@ -1,5 +1,7 @@
+//importing all the information about the cards
 import Card from './cards';
 
+//creating my display or card info I wnat ot have
 function App() {
   const display = [
     {
@@ -22,15 +24,16 @@ function App() {
     }
   ]
   return (
+    //using map method to go through all the cards, using display: flex to align them how I want
     <>
     <h1>Hi there</h1>
     <div style={{display:'flex'}} >
-    {display.map((card)=>{
-        return (<div key={card.title}>
-        <Card data={card}></Card>
-        <br/>
-        </div>)
-      })}
+      {display.map((card)=>{
+          return (<div key={card.title}>
+          <Card data={card}></Card>
+          <br/>
+          </div>)
+        })}
     </div>
     </>
   );

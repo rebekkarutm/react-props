@@ -1,4 +1,6 @@
+//importing CSS properties so I can use text-align
 import { CSSProperties } from 'react'
+//using props to create the card data
 type Props = {
     data:{
         pictureURL:string,
@@ -7,6 +9,7 @@ type Props = {
         paragraphName:string
     }
 }
+//styling the cards and images and returning the relevant info for the cards
 const Card = ({data}:Props)=>{
     const {pictureURL, title, paragraph, paragraphName} = data
     const cardStyle:CSSProperties = {
