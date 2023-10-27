@@ -26,8 +26,8 @@ function App() {
   return (
     //using map method to go through all the cards, using display: flex to align them how I want
     <>
-    <h1>Hi there</h1>
-    <div style={{display:'flex'}} >
+    <h1 style={{textAlign:'center'}} >Hi there</h1>
+    <div style={{display:'flex', justifyContent: 'center'}} >
       {display.map((card)=>{
           return (<div key={card.title}>
           <Card data={card}></Card>
